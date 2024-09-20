@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <div>
+        <form>
+            <!--Feedback Type-->
+            <label>Feedback Type</label>
+            <select class="input-feild">
+                <option>Compliment</option>
+                <option>Excellent</option>
+                <option>Average</option>
+            </select><br/><br/>
+            <!--Message-->
+            <label>Message</label>
+            <textarea class="text-area"></textarea><br/><br/>
+            <!--Website-->
+            <label>Website Rating</label>
+            <div class="rating">
+                <input class="radio-button" type="radio"/>
+                <label>Excellent</label>
+                <input class="radio-button" type="radio"/>
+                <label>Good</label>
+                <input class="radio-button" type="radio"/>
+                <label>Average</label>
+                <input class="radio-button" type="radio"/>
+                <label>Poor</label>
+            </div><br/><br/>
+            <!--Age-->
+            <label>Age(10-100):</label>
+            <input class="input-feild" type="number"/><br/><br/>
+            <!--Email-->
+            <label>Email<span>*</span></label>
+            <input class="input-feild" type="email"/><br/><br/>
+            <!--Password-->
+            <label>Password (min, 8 characters):</label>
+            <input class="input-feild" type="text"/><br/><br/>
+            <!--Website-->
+            <label>website URL (optional):</label>
+            <input class="input-feild" type="number"/><br/><br/>
+
+            <!--Terms and conditions-->
+            <div class="terms">
+                <input type="checkbox"/>
+                <label>I agree to the terms and conditions.</label>
+            </div><br/><br/>
+            <!--submit button-->
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
